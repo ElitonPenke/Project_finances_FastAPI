@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/style.css">   
+<title>Projeto Web Scraping</title>
+</head>
+<body>
+    <header>
+        <h1>Insights financeiros</h1>
+    </header>
+
+    <main>
+         <div class="info-projeto">
+                <h3>Projeto Feito com base no Web Scraping, com o site <a href="https://www.fundamentus.com.br/">FUNDAMENTOS</a></h2>
+            </div>
+
+
+       <div class="container">
+
+<!-- aqui o forms é para conversar com o backend, enviando todos esse inputs, do metodo post de enviar dados -->
+
+
+        <form action="/buscar" method="post">       
+            <p>Escolha uma ação:</p>
+            <div>
+
+                <!-- o 'name' é a identificação de etique dos dados -->
+                <input class type="text" name="acao" placeholder="Digite a ação" required>
+
+            <!-- aqui ele envia em si os dados -->
+            <div type="submit" class="botao">  
+                <button type="submit" class="botao">Avançar</button>
+            </div>
+        </form>
+       </div>
+    </main>
+
+    <footer>
+                © 2026 • Projeto de Eliton Penke
+    </footer>
+</body>
+</html>
