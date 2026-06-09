@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Web Scraping</title>
+    <link rel="stylesheet" href="../static/css/style2.css">   
+
+</head>
+<body>
+    <header class="header">
+
+        <div>
+            <h1>Insights Financeiros</h1>
+            <p>Análise financeira com Web Scraping</p>
+        </div>
+
+        <a href="/">
+            <button type="button" class="btn">Voltar</button>
+        </a>
+
+    </header>
+    <main class="container">
+
+        <section class="card">
+
+            <h2>Empresa</h2>
+
+            <div class="item">
+                <span>Papel</span>
+                <strong>{{ dados["papel"] }}</strong>
+            </div>
+
+            <div class="item">
+                <span>Empresa</span>
+                <strong>{{ dados["empresa"] }}</strong>
+            </div>
+
+            <div class="item">
+                <span>Setor</span>
+                <strong>{{ dados["setor"] }}</strong>
+            </div>
+
+        </section>
+
+        <section class="card">
+
+            <h2>Indicadores</h2>
+
+            <div class="item">
+                <span>Valor Mercado</span>
+                <strong>{{ dados["valor_de_mercado"] }}</strong>
+            </div>
+
+            <div class="item">
+                <span>Lucro Líquido</span>
+                <strong>{{ dados["lucro_líquido"] }}</strong>
+            </div>
+
+            <div class="item">
+                <span>EBIT</span>
+                <strong>{{ dados["ebit"] }}</strong>
+            </div>
+
+        </section>
+
+        <section class="card">
+
+            <h2>Performance</h2>
+
+            <div class="item">
+                <span>Dia</span>
+                <strong class="">{{ dados["dia"] }}</strong>
+            </div>
+
+            <div class="item">
+                <span>Mês</span>
+                <strong class="">{{ dados["mês"] }}</strong>
+            </div>
+
+            <div class="item">
+                <span>12 Meses</span>
+                <strong class="">{{ dados["12_meses"] }}</strong>
+            </div>
+
+        </section>
+
+    </main>

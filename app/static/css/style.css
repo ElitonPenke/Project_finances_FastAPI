@@ -1,0 +1,149 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+background: linear-gradient(135deg, #0f172a, #111827, #1e293b);
+min-height: 100vh;
+color: white;
+display: flex;
+flex-direction: column;
+}
+
+header{
+padding: 30px;
+text-align: center;
+border-bottom: 1px solid rgba(255,255,255,0.1);
+background: rgba(255,255,255,0.03);
+backdrop-filter: blur(5px);
+}
+
+header h1{
+font-size: 2.5rem;
+color:  #ffffff;
+letter-spacing: 1px;
+}
+
+.info-projeto{
+margin-bottom: 120px;
+text-align: center;
+max-width: 700px;
+}
+
+.info-projeto h3{
+font-weight: normal;
+color: #cbd5e1;
+line-height: 1.5;
+}
+
+.info-projeto a{
+color: #38bdf8;
+text-decoration: none;
+font-weight: bold;
+}
+
+.info-projeto a:hover{
+text-decoration: underline;
+}
+
+
+h3 a {
+text-decoration: none;
+color: #ffffff;
+}
+
+main{
+flex: 1;
+display: flex;
+flex-direction:column;
+justify-content: center;
+align-items: center;
+padding: 40px 20px;
+}
+
+.container{
+width: 100%;
+max-width: 500px;
+
+background: rgba(255,255,255,0.05);
+border: 1px solid rgba(255,255,255,0.08);
+
+padding: 40px;
+border-radius: 20px;
+
+backdrop-filter: blur(10px);
+
+box-shadow:
+0 10px 30px rgba(0,0,0,0.4);
+}
+
+.container h3{
+font-size: 1.4rem;
+margin-bottom: 20px;
+color: #f8fafc;
+line-height: 1.5;
+}
+
+.container p{
+margin-bottom: 10px;
+color: #cbd5e1;
+font-size: 1rem;
+}
+
+select{
+width: 100%;
+padding: 15px;
+
+border: none;
+border-radius: 12px;
+
+background: #1e293b;
+color: white;
+
+font-size: 1rem;
+
+outline: none;
+
+transition: 0.3s;
+}
+
+select:hover{
+background: #273449;
+}
+
+.botao{
+margin-top: 25px;
+}
+
+button{
+width: 100%;
+padding: 15px;
+
+border: none;
+border-radius: 12px;
+
+background: linear-gradient(90deg, #0ea5e9, #38bdf8);
+
+color: white;
+font-size: 1rem;
+font-weight: bold;
+
+cursor: pointer;
+
+transition: 0.3s;
+}
+
+button:hover{
+transform: translateY(-2px);
+box-shadow: 0 8px 20px rgba(14,165,233,0.4);
+}
+
+footer{
+text-align: center;
+padding: 20px;
+color: #94a3b8;
+font-size: 0.9rem;
+}
